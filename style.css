@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+
+#navbar{
+    display: flex;
+    height:10vh;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    text-align: center;
+    background-color: rgb(201, 201, 144);
+   
+   
+}
+#navbar1{
+    width:47vh;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    flex-direction: row;
+    
+}
+
+h2{
+    color: #2A6049;
+}
+
+#bag {
+    width: 15%;
+    height:38%;
+}
+#search{
+    width:30%;
+    height: 30%;
+}
+#user{
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    background-color: #2A6049;
+}
+#shopping{
+    width: 30%;
+    height: 30%;
+    color: #2A6049;
+}
+
+#navbar2{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    left: 40%;
+    position: absolute;
+    margin-top: 40px;
+   
+    
+}
+
+#navbar2 a:hover,
+#navbar2 .active {
+  color: #2f6b4f;
+}
+
+#navbar3{
+    height: 8vh;
+    width: 20vh;
+    display: flex;
+    align-items: center;
+    gap:45px;
+    margin-top: 17px;
+    margin-right: 170px;
+
+}
+
+#main-content{
+    margin: 0;
+    padding-top: 6px;
+    background-color:bisque;
+    
+
+}
+/* #banner{
+    width:150vh;
+    height: 60vh;
+} */
+
+.banner1{
+    height:70vh;
+    width: 150vh;
+    margin-left: 10%;
+}
+
+#text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#container{
+    width:100vh;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 190px;
+}
+
+.product1{
+    width:30%;
+    height:50%;
+}
+#productDetails{
+    display: flex;  
+    flex-direction: column;
+}
