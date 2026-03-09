@@ -3,11 +3,16 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    background-color: #FAF4E8;
+    
     
 }
 
 
 #navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
     height:10vh;
     width: auto;
@@ -15,7 +20,7 @@ body{
     justify-content: space-between;
     padding: 0 100px;
     text-align: center;
-    background-color: rgb(201, 201, 144);
+    background-color: #FAF4E8;
    
    
 }
@@ -47,7 +52,7 @@ h2{
     width: 30%;
     height: 30%;
     border-radius: 50%;
-    background-color: #2A6049;
+    filter: invert(26%) sepia(57%) saturate(670%) hue-rotate(60deg) brightness(85%) contrast(95%);
 }
 #shopping{
     width: 30%;
@@ -75,6 +80,7 @@ h2{
     height: 8vh;
     width: 20vh;
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap:45px;
     margin-top: 17px;
@@ -85,42 +91,203 @@ h2{
 #main-content{
     margin: 0;
     padding-top: 6px;
-    background-color:bisque;
+    background-color:#FAF4E8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 
 }
-/* #banner{
-    width:150vh;
-    height: 60vh;
-} */
 
-.banner1{
-    height:70vh;
-    width: 150vh;
-    margin-left: 10%;
+#banner{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
 }
+
+
 
 #text{
     display:flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 80px;
 
 }
 
-#container{
-    width:100vh;
-    height: 70vh;
+
+#container {
+    width: 100vw;
+    min-height: 50vh;
     display: flex;
+    gap: 30px;
     align-items: center;
-    justify-content: space-between;
-    margin-left: 190px;
+    justify-content: center; 
+    background-color:#FAF4E8; 
+    margin-top: 35px;
 }
 
-.product1{
-    width:30%;
-    height:50%;
+
+#product {
+    width: 300px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
 }
-#productDetails{
+
+
+.product-image {
+    width: 100%;
+    background-color: white; 
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 34vh;
+    gap: 5px;
+}
+
+
+.productDetails {
     display: flex;  
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.title {
+    font-size: 20px;
+    margin: 5px 0;
+    font-weight: 300;
+}
+
+.price {
+    font-size: 18px;
+    color: #555;
+    margin: 5px 0 20px 0;
+}
+
+
+.price del {
+    color: #999;
+    margin-right: 5px;
+}
+
+
+.quantity-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.quantity-box span {
+    cursor: pointer;
+}
+
+
+.add-btn {
+    width: 100%;
+    border: 1px solid black;
+    background-color: transparent;
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #eaeaea; 
+}
+
+.section-divider{
+    border: none; 
+    border-top: 1px solid #999999; 
+    width: 74%; 
+    margin: 50px auto;
+    background-color: #FAF4E8;
+
+}
+
+#section-divider {
+    background-color: #FAF4E8;
+}
+
+
+.product {
+    width: 100%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+
+.shop-section {
+    background-color: #ffffff; 
+    width: 85%; 
+    max-width: 1200px;
+    margin: 40px auto; 
+    padding: 50px; 
+    box-sizing: border-box;
+}
+
+
+.Grab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px; 
+    background-color: transparent; 
+}
+
+
+#grab-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; 
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent; 
+}
+
+.footer1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    height: 50%;
+    width: 60%;
+    gap: 130px;
+}
+
+#shopping-bag{
+    height: 20%;
+    width: 20%;
+    filter: invert(26%) sepia(57%) saturate(670%) hue-rotate(60deg) brightness(85%) contrast(95%);
+}
+
+#truck-delivery{
+    height: 20%;
+    width: 20%;
+    filter: invert(26%) sepia(57%) saturate(670%) hue-rotate(60deg) brightness(85%) contrast(95%);
+}
+
+#health-insurance{
+    height: 20%;
+    width: 20%;
+    filter: invert(26%) sepia(57%) saturate(670%) hue-rotate(60deg) brightness(85%) contrast(95%);
+}
+
+.paragraph{
+    color:#2A6049;
+    
 }
