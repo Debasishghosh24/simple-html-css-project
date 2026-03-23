@@ -14,7 +14,6 @@ body{
     top: 0;
     z-index: 1000;
     display: flex;
-    
     height:auto;
     width: 100%;
     display: flex;
@@ -43,9 +42,9 @@ h2{
 }
 
 #bag {
-    margin-top: 20px;
-    width: 8%;
-    height:8%;
+   
+    width: 7%;
+    height:7%;
 }
 #navbar1 h2{
     margin-top: 52px;
@@ -495,13 +494,16 @@ form{
     }
 
     #navbar2{
-    gap: 30px;
-    left: 15%;
-    height: 10%;
-    margin-top: 60px;
-   
-    
+    display: flex;
+        justify-content: center;
+        gap: 15px;         
+        width: 100%;
+        margin-top: 0;      
+        position: static; 
         
+    }
+    #navbar2 a {
+        font-size: 14px;
     }
 
     #navbar3{
