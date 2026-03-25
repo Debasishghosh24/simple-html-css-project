@@ -125,6 +125,7 @@ h2 {
 .paragraph2{
     height: 30vh;
     width: 86vh;
+    
     text-align: center;
     font-size: larger;
 }
@@ -248,4 +249,93 @@ form{
     width: 25px;
     filter: brightness(0) invert(1);
     
+}
+
+@media (max-width: 480px) {
+  #navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  #navbar1 {
+    height: auto;
+    margin-bottom: 10px;
+  }
+  #bag {
+    width: 10%;
+    height: 20%;
+  }
+  #navbar1 h2 {
+    margin: 0;
+    white-space: nowrap;
+    font-size: 20px;
+  }
+
+  #navbar2 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    margin-top: 0;
+    position: static;
+  }
+  #navbar2 a {
+    font-size: 14px;
+  }
+
+  #navbar3 {
+    display: none;
+  }
+
+  .main-content{
+    height: auto;
+    width: auto;
+    margin-left: 3px;
+
+  }
+
+  .image{
+    height:auto;
+    width: 33vh;
+    margin-right: 10px;
+  }
+
+  .paragraph1{
+    height: auto;
+    width: 41vh;
+    margin-left: 10px;
+
+  }
+
+  .paragraph2{
+    height: auto;
+    width:41vh;
+  }
+
+
+
+  .footer1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 0;
+    height: auto;
+    width: auto;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .end {
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    background-color: #2a6049;
+  }
+  .product-image{
+    max-height: fit-content;
+  }
 }
